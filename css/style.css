@@ -1,1 +1,50 @@
-/* CSS Grid */
+* {
+  box-sizing: border-box;
+}
+/* IPHONE 8 */
+@media screen and (max-width: 375px) {
+  body {
+    background-color: lightgray;
+    margin: 0;
+    overflow-x: hidden;
+  }
+
+  .hamburger {
+    position: relative;
+    top: 20px;
+    left: 80%;
+  }
+  .hamburger > div {
+    margin-bottom: 5px;
+    background-color: darkred;
+    width: 30px;
+    height: 3px;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  .boots > li {
+    height: 40vh;
+    /* width: 100%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: pink;
+  }
+  .boots {
+    width: 1040px;
+    overflow-x: scroll;
+    border: 1px solid red;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    column-gap: 20px;
+    margin: 0 40px;
+    padding: 0;
+  }
+  .title {
+    margin: 20px;
+  }
+}
