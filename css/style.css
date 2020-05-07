@@ -1,50 +1,65 @@
 * {
   box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
 /* IPHONE 8 */
-@media screen and (max-width: 375px) {
-  body {
-    background-color: lightgray;
-    margin: 0;
-    overflow-x: hidden;
-  }
 
-  .hamburger {
-    position: relative;
-    top: 20px;
-    left: 80%;
-  }
-  .hamburger > div {
-    margin-bottom: 5px;
-    background-color: darkred;
-    width: 30px;
-    height: 3px;
-  }
+body {
+  background-color: white;
+  margin: 0;
+  overflow-x: hidden;
+}
+.logo {
+  width: 120px;
+  margin: 20px auto;
+}
+.logoimg {
+  width: 100%;
+}
+.navlinks {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 40px;
+}
+h2 {
+  margin: 40px;
+}
 
-  ul {
-    list-style: none;
-    padding: 0;
-  }
-  .boots > li {
-    height: 40vh;
-    /* width: 100%; */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: pink;
-  }
-  .boots {
-    width: 1040px;
-    overflow-x: scroll;
-    border: 1px solid red;
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    column-gap: 20px;
-    margin: 0 40px;
-    padding: 0;
-  }
-  .title {
-    margin: 20px;
-  }
+ul {
+  list-style: none;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.boots-section {
+  margin: 20px 40px 80px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  column-gap: 20px;
+  row-gap: 20px;
+}
+
+.pic {
+  width: 100%;
+  border-radius: 5%;
+}
+.details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.item {
+  background-color: #f8f8f8;
+  border-radius: 5%;
+}
+.price {
+  text-align: right;
+  margin-right: 10px;
+}
+
+.productname {
+  text-align: left;
+  margin-left: 10px;
 }
